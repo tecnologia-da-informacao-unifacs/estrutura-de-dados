@@ -1,6 +1,6 @@
 # estrutura-de-dados
 
-Repositório para guardar exercícios da disciplinatos 
+Repositório para guardar exercícios da disciplina 
 
 Atenção:
 
