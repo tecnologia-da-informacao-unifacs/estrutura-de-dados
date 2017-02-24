@@ -1,4 +1,4 @@
-# Estrutura de Dados 1
+# Estrutura de Dados I
 
 Repositório para guardar exercícios da disciplina 
 
