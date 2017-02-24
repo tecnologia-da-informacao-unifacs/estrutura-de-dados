@@ -1,13 +1,13 @@
-# estrutura-de-dados
+# Estrutura de Dados 1
 
 Repositório para guardar exercícios da disciplina 
 
-Atenção:
+####Atenção:
 
-*Todos os códigos terão comentários 
+* Todos os códigos terão comentários 
 
-*Todas as variáveis terão o nome em inglês
+* Todas as variáveis terão o nome em inglês
 
-*Não deverá ser copiado para entrega de trabalhos 
+* Não deverá ser copiado para entrega de trabalhos 
 
-*Os projetos podem ser melhorados 
+* Os projetos podem ser melhorados 
