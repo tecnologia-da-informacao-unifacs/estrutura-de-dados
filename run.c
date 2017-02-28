@@ -68,7 +68,7 @@ int main(){
 
                 coords =coordinates(board);
 
-                if(!(coords[0] <= 0){
+                if(!(coords[0] <= 0)){
 
                         // mudando a posição do robô
                     board[coords[0]][coords[1]] = 0;
@@ -104,6 +104,46 @@ int main(){
                     printf("Impossível descer\n");
                 }
             break;
+
+            case 3:
+                coords =coordinates(board);
+
+                if(!(coords[1] >= 4)){
+
+                    // mudando a posição do robô
+                    board[coords[0]][coords[1]] = 0;
+
+                    board[coords[0]][coords[1] + 1] = robot;
+
+                    coords =coordinates(board);
+
+                    printf("A nova posição do robô é: %d , %d\n", coords[0], coords[1]);
+
+                }else{
+
+                    printf("Impossível mover para direita\n");
+                }
+
+            break;
+
+            case 4:
+                coords =coordinates(board);
+
+                if(!(coords[1] <= 0)){
+
+                    // mudando a posição do robô
+                    board[coords[0]][coords[1]] = 0;
+
+                    board[coords[0]][coords[1] - 1 ] = robot;
+
+                    coords =coordinates(board);
+
+                    printf("A nova posição do robô é: %d , %d\n", coords[0], coords[1]);
+
+                }else{
+
+                    printf("Impossível mover para esquerda\n");
+                }
 
         }
 
