@@ -45,6 +45,7 @@ int main(){
     int robot = 1;
     int *coords;
     int x,y, z;
+    char action = 's';
 
     // inicializando tabuleiro
     for(x=0; x <= 4; x++){
@@ -57,23 +58,60 @@ int main(){
 
 
     // colocando robô no tabuleiro
-    board[0][0] =  robot;
-
-    switch( menu() ){
-        
-        case 1:
-
-            coords =coordinates(board);
-
-            printf("%d, %d", coords[0], coords[1]);
-
-        break;
+    board[1][0] =  robot;
 
 
+    while( action = 's' ){
+        switch( menu() ){
 
+            case 1:
 
+                coords =coordinates(board);
+
+                if(!(coords[0] <= 0){
+
+                        // mudando a posição do robô
+                    board[coords[0]][coords[1]] = 0;
+
+                    board[coords[0] - 1 ][coords[1]] = robot;
+
+                    coords =coordinates(board);
+
+                    printf("A nova posição do robô é: %d , %d\n", coords[0], coords[1]);
+
+                }else{
+
+                    printf("Impossível subir\n");
+                }
+            break;
+
+            case 2:
+                coords =coordinates(board);
+
+                if(!(coords[0] >= 4)){
+
+                    // mudando a posição do robô
+                    board[coords[0]][coords[1]] = 0;
+
+                    board[coords[0] + 1 ][coords[1]] = robot;
+
+                    coords =coordinates(board);
+
+                    printf("A nova posição do robô é: %d , %d\n", coords[0], coords[1]);
+
+                }else{
+
+                    printf("Impossível descer\n");
+                }
+            break;
+
+        }
+
+        printf("Deseja continuar s ou n\n");
+        scanf("%s", &action);
 
     }
+    
 
 
 
