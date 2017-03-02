@@ -196,8 +196,7 @@ int main(){
         printf("Deseja continuar s ou n\n");
         scanf("%s", &action);
 
-        // Esse comando limpa a tela em qualquer sistema operacional
-        printf("\e[1;1H\e[2J");
+    
 
     }
     
