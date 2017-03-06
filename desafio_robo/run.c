@@ -92,7 +92,7 @@ int main(){
                     
                     row_number++;
                     
-                    printf("A nova posição do robô é: %d , %d\n", coords[0], coords[1]);
+                    printf("A nova posição do robô é: linha  %d ,  coluna %d\n", coords[0], coords[1]);
 
                 }else{
 
@@ -118,7 +118,7 @@ int main(){
 
                     row_number++;
                 
-                    printf("A nova posição do robô é: %d , %d\n", coords[0], coords[1]);
+                    printf("A nova posição do robô é: linha  %d ,  coluna %d\n" , coords[0], coords[1]);
 
                 }else{
 
@@ -145,7 +145,7 @@ int main(){
 
                     row_number++;
             
-                    printf("A nova posição do robô é: %d , %d\n", coords[0], coords[1]);
+                    printf("A nova posição do robô é: linha  %d ,  coluna %d\n" , coords[0], coords[1]);
 
                 }else{
 
@@ -173,7 +173,7 @@ int main(){
 
                     row_number++;
                 
-                    printf("A nova posição do robô é: %d , %d\n", coords[0], coords[1]);
+                    printf("A nova posição do robô é: linha  %d ,  coluna %d\n" , coords[0], coords[1]);
 
                 }else{
 
@@ -197,6 +197,10 @@ int main(){
         scanf("%s", &action);
 
     
+
+        if(action == 'n'){
+            break;
+        }
 
     }
     
